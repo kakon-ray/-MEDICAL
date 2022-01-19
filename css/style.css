@@ -114,140 +114,46 @@
 /* ==========================================
         Doctor Section
 =============================================*/
-.doctor-section .img-fluid {
-  height: 370px;
-  width: 100%;
+.doctor-section .img-hover {
+  position: relative;
 }
-.doctor-section img:hover {
-  opacity: 0.5;
+
+.doctor-section .image {
+  display: block;
+  width: 100%;
+  height: 400px;
+}
+
+.doctor-section .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #0ebad8c2;
+}
+
+.doctor-section .img-hover:hover .overlay {
+  opacity: 1;
+}
+
+.doctor-section .text {
+  font-size: 25px;
+  position: absolute;
+  bottom: 1%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.doctor-section .text a {
+  color: #f8f9fa;
 }
 .doctor-section .font-bold {
   font-weight: 700;
 }
-
-/* Start background img-1 style*/
-.doctor-section .bg-img-1 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url(../img/Screenshot_1.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  top: 0px;
-  height: 380px;
-}
-
-.doctor-section .bg-img-1:hover {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(27, 161, 202, 0.815) 0%,
-      rgba(31, 177, 214, 0.836) 100%
-    ),
-    url(../img/Screenshot_1.png);
-}
-
-/* Start background img-2 style*/
-.doctor-section .bg-img-2 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url(../img/Screenshot_2.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  top: 0px;
-  height: 380px;
-}
-
-.doctor-section .bg-img-2:hover {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(27, 161, 202, 0.815) 0%,
-      rgba(31, 177, 214, 0.836) 100%
-    ),
-    url(../img/Screenshot_2.png);
-}
-
-/* Start background img-3 style*/
-.doctor-section .bg-img-3 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url(../img/Screenshot_3.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  top: 0px;
-  height: 380px;
-}
-
-.doctor-section .bg-img-3:hover {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(27, 161, 202, 0.815) 0%,
-      rgba(31, 177, 214, 0.836) 100%
-    ),
-    url(../img/Screenshot_3.png);
-}
-
-/* Start background img-4 style*/
-.doctor-section .bg-img-4 {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0) 0%,
-      rgba(0, 0, 0, 0) 100%
-    ),
-    url(../img/Screenshot_4.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  position: relative;
-  top: 0px;
-  height: 380px;
-}
-
-.doctor-section .bg-img-4:hover {
-  background-image: linear-gradient(
-      to bottom,
-      rgba(27, 161, 202, 0.815) 0%,
-      rgba(31, 177, 214, 0.836) 100%
-    ),
-    url(../img/Screenshot_4.png);
-}
-
-/* Hover Icon style */
-.doctor-section .hover-icon {
-  position: absolute;
-  bottom: 3%;
-  left: 36%;
-  font-size: 27px;
-  display: none;
-  cursor: pointer;
-}
-
-.doctor-section .hover-icon a {
-  color: #fff;
-}
-
-.doctor-section .bg-img-1:hover .hover-icon {
-  display: block;
-}
-.doctor-section .bg-img-2:hover .hover-icon {
-  display: block;
-}
-.doctor-section .bg-img-3:hover .hover-icon {
-  display: block;
-}
-.doctor-section .bg-img-4:hover .hover-icon {
-  display: block;
-}
-
 /* ==========================================
       Start appointment section
 =============================================*/
@@ -255,4 +161,59 @@
 .appointment-section {
   background-color: #0ebad8;
   padding: 50px 0;
+}
+
+/* ==========================================
+      Start Letest News section
+=============================================*/
+.img-container {
+  position: relative;
+}
+
+.letest-news .image {
+  display: block;
+  width: 100%;
+  height: 300px;
+}
+
+.letest-news .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #21a6d3b9;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+
+.img-container:hover .overlay {
+  height: 25%;
+}
+
+.letest-news .text {
+  color: white;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+}
+
+/* ==========================================
+      Start Letest Opening section
+=============================================*/
+.opening-section {
+  background-image: url("../img/opening.jpg");
+  width: 100%;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  background-size: 100% 100%;
+}
+
+.opening-section .card {
+  background-color: #fbfdffd0;
 }
