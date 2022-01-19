@@ -2,7 +2,7 @@
         Start Global Section
 =============================================*/
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Condensed:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&family=Roboto+Condensed:wght@300;700&display=swap");
 * {
   font-family: "Roboto Condensed", sans-serif;
 }
@@ -41,11 +41,18 @@
   color: black;
 }
 .dropdown-menu.show {
-  top: 60px;
+  top: 64px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
   color: #00c0e1;
+}
+.navbar-light .navbar-nav .show > .nav-link,
+.navbar-light .navbar-nav .nav-link.active {
+  color: #00c0e1;
+}
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 700;
 }
 
 /* ==========================================
@@ -65,4 +72,187 @@
 =============================================*/
 .Provide-section .fas {
   font-size: 50px;
+}
+.title-width {
+  width: 8%;
+  height: 4px;
+  background-color: #00c0e1;
+}
+
+/* ==========================================
+        Start Header Exprence  Section 
+=============================================*/
+
+.enperence-section .title-width {
+  background-color: #ffffff;
+  width: 25%;
+}
+.enperence-section .ex-bg-1 {
+  background-color: #147b8d;
+}
+.enperence-section .ex-bg-2 {
+  background-color: #00a5c2;
+}
+.enperence-section .ex-bg-3 {
+  background-color: #1390a7;
+}
+.enperence-section .ex-bg-4 {
+  background-color: #1ab0ca;
+}
+.enperence-section .count {
+  font-size: 4em;
+  font-style: normal;
+  font-weight: 300;
+}
+.enperence-section .fas {
+  font-size: 3em;
+}
+.enperence-section .title {
+  font-weight: 700;
+}
+
+/* ==========================================
+        Doctor Section
+=============================================*/
+.doctor-section .img-fluid {
+  height: 370px;
+  width: 100%;
+}
+.doctor-section img:hover {
+  opacity: 0.5;
+}
+.doctor-section .font-bold {
+  font-weight: 700;
+}
+
+/* Start background img-1 style*/
+.doctor-section .bg-img-1 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/Screenshot_1.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 0px;
+  height: 380px;
+}
+
+.doctor-section .bg-img-1:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(27, 161, 202, 0.815) 0%,
+      rgba(31, 177, 214, 0.836) 100%
+    ),
+    url(../img/Screenshot_1.png);
+}
+
+/* Start background img-2 style*/
+.doctor-section .bg-img-2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/Screenshot_2.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 0px;
+  height: 380px;
+}
+
+.doctor-section .bg-img-2:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(27, 161, 202, 0.815) 0%,
+      rgba(31, 177, 214, 0.836) 100%
+    ),
+    url(../img/Screenshot_2.png);
+}
+
+/* Start background img-3 style*/
+.doctor-section .bg-img-3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/Screenshot_3.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 0px;
+  height: 380px;
+}
+
+.doctor-section .bg-img-3:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(27, 161, 202, 0.815) 0%,
+      rgba(31, 177, 214, 0.836) 100%
+    ),
+    url(../img/Screenshot_3.png);
+}
+
+/* Start background img-4 style*/
+.doctor-section .bg-img-4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url(../img/Screenshot_4.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+  top: 0px;
+  height: 380px;
+}
+
+.doctor-section .bg-img-4:hover {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(27, 161, 202, 0.815) 0%,
+      rgba(31, 177, 214, 0.836) 100%
+    ),
+    url(../img/Screenshot_4.png);
+}
+
+/* Hover Icon style */
+.doctor-section .hover-icon {
+  position: absolute;
+  bottom: 3%;
+  left: 36%;
+  font-size: 27px;
+  display: none;
+  cursor: pointer;
+}
+
+.doctor-section .hover-icon a {
+  color: #fff;
+}
+
+.doctor-section .bg-img-1:hover .hover-icon {
+  display: block;
+}
+.doctor-section .bg-img-2:hover .hover-icon {
+  display: block;
+}
+.doctor-section .bg-img-3:hover .hover-icon {
+  display: block;
+}
+.doctor-section .bg-img-4:hover .hover-icon {
+  display: block;
+}
+
+/* ==========================================
+      Start appointment section
+=============================================*/
+
+.appointment-section {
+  background-color: #0ebad8;
+  padding: 50px 0;
 }
