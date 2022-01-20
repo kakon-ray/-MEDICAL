@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <body>
+      <!DOCTYPE html>
+      <html lang="en">
+        <head>
+          <meta charset="UTF-8" />
+          <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+          <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+          />
+          <!-- Font Awesome -->
+          <script
+            src="https://kit.fontawesome.com/6951010ac6.js"
+            crossorigin="anonymous"
+          ></script>
+          <!-- Bootstrap Link -->
+
+          <link rel="stylesheet" href="css/bootstrap.css" />
+          <link rel="stylesheet" href="css/animation.css" />
+          <link rel="stylesheet" href="css/style.css" />
+          <link rel="stylesheet" href="css/appointment.css" />
+
+          <link rel="shortcut icon" type="image/x-icon" href="img/site.png" />
+          <title>MEDICAL</title>
+        </head>
+        <body>
+          <header>
+            <!-- Start Navbar Section -->
+            <nav class="navbar navbar-expand-lg navbar-light py-2 h6">
+              <div class="container">
+                <a class="navbar-brand text-info" href="index.html"
+                  ><i class="fas fa-stethoscope"></i> MEDICAL</a
+                >
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarSupportedContent"
+                  aria-controls="navbarSupportedContent"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div
+                  class="collapse navbar-collapse"
+                  id="navbarSupportedContent"
+                >
+                  <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item m-3">
+                      <a class="nav-link" aria-current="page" href="index.html"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item m-3">
+                      <a class="nav-link active" href="appointment.html"
+                        >Appointment</a
+                      >
+                    </li>
+
+                    <li class="nav-item dropdown m-3">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        id="navbarDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        About Our Clinic
+                      </a>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="navbarDropdown"
+                      >
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">Another action</a>
+                        </li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Something else here</a
+                          >
+                        </li>
+                      </ul>
+
+                      <!-- <li class="nav-item m-3">
+                <a class="nav-link disabled">Other</a>
+              </li> -->
+                    </li>
+                    <li class="nav-item m-3">
+                      <a class="nav-link" href="#">Contact</a>
+                    </li>
+                  </ul>
+                  <div
+                    class="d-flex justify-content-center align-items-center d-none d-lg-block"
+                  >
+                    <form class="d-flex">
+                      <input
+                        id="search-input"
+                        class="form-control me-2"
+                        placeholder="Search"
+                        aria-label="Search"
+                      />
+                    </form>
+                    <div class="search ms-3">
+                      <a href="javascript:void(0)" onclick="myFunction()"
+                        ><i class="fas fa-search" id="toggle"></i
+                      ></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- End Navbar Section -->
+
+            <!-- Start Header Slider Section -->
+            <div class="slider-section">
+              <div class="row">
+                <div
+                  id="carouselExampleControls"
+                  class="carousel slide"
+                  data-bs-ride="carousel"
+                >
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img
+                        src="img/surgery-1822458.jpg"
+                        class="d-block w-100 img-fluid"
+                        alt="..."
+                      />
+                      <div
+                        class="carousel-caption d-none d-md-block h3 bounce-top"
+                      >
+                        <h1 class="h1">First slide label</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Amet, perferendis.
+                        </p>
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <button class="m-3 btn btn-info text-light btn-lg">
+                            Read More
+                          </button>
+                          <button class="m-3 btn btn btn-outline-info btn-lg">
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/successful-medical-team_329181-9252.jpg"
+                        class="d-block w-100 img-fluid"
+                        alt="..."
+                      />
+                      <div
+                        class="carousel-caption d-none d-md-block h3 bounce-top"
+                      >
+                        <h1 class="h1">First slide label</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Amet, perferendis.
+                        </p>
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <button class="m-3 btn btn-info text-light btn-lg">
+                            Read More
+                          </button>
+                          <button class="m-3 btn btn btn-outline-info btn-lg">
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item">
+                      <img
+                        src="img/laboratory-ga7286734d_1920.jpg"
+                        class="d-block w-100 img-fluid"
+                        alt="..."
+                      />
+                      <div
+                        class="carousel-caption d-none d-md-block h3 bounce-top"
+                      >
+                        <h1 class="h1">First slide label</h1>
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing
+                          elit. Amet, perferendis.
+                        </p>
+                        <div
+                          class="d-flex justify-content-center align-items-center"
+                        >
+                          <button class="m-3 btn btn-info text-light btn-lg">
+                            Read More
+                          </button>
+                          <button class="m-3 btn btn btn-outline-info btn-lg">
+                            Book Now
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button
+                    class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev"
+                  >
+                    <span
+                      class="carousel-control-prev-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button
+                    class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next"
+                  >
+                    <span
+                      class="carousel-control-next-icon"
+                      aria-hidden="true"
+                    ></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </header>
+
+          <!-- Start main section -->
+
+          <main>
+            <!-- Start Provide section -->
+            <section class="Provide-section py-5 text-center text-focus-in">
+              <div class="container">
+                <h1 class="text-secondary py-2 bounce-top">What we Provide</h1>
+                <div class="title-width m-auto bg-info"></div>
+
+                <div class="row py-3">
+                  <article class="col-lg-4 col-md-6 g-5">
+                    <i class="fas fa-stethoscope pb-5 text-info"></i>
+                    <h4 class="text-secondary">Medical Examination</h4>
+                    <p class="text-secondary">
+                      The development of preventive medicine has been one of the
+                      main goals of Metropolitan Hospital since its
+                      establishment. Quality of life directly depends on
+                      prevention and discovering illnesses right at the start.
+                    </p>
+                  </article>
+                  <article class="col-lg-4 col-md-6 g-5">
+                    <i class="fas fa-mortar-pestle pb-5 text-info"></i>
+                    <h4 class="text-secondary">Medical Examination</h4>
+                    <p class="text-secondary">
+                      The development of preventive medicine has been one of the
+                      main goals of Metropolitan Hospital since its
+                      establishment. Quality of life directly depends on
+                      prevention and discovering illnesses right at the start.
+                    </p>
+                  </article>
+                  <article class="col-lg-4 col-md-6 g-5">
+                    <i class="fas fa-syringe pb-5 text-info"></i>
+                    <h4 class="text-secondary">Medical Examination</h4>
+                    <p class="text-secondary">
+                      The development of preventive medicine has been one of the
+                      main goals of Metropolitan Hospital since its
+                      establishment. Quality of life directly depends on
+                      prevention and discovering illnesses right at the start.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <!-- Start Opening Section -->
+
+            <section class="appointment-page-contact text-light pb-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-2"></div>
+                  <div class="col-lg-8">
+                    <div class="card mt-5 py-5 pb-5 px-2">
+                      <h1 class="text-center">Book an appointment now</h1>
+                      <div class="title-width m-auto my-4 bg-info"></div>
+                      <div class="row">
+                        <form action="">
+                          <div class="row g-3">
+                            <div class="col-lg-6">
+                              <label>Your Name</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                name="name"
+                                placeholder="Your Name"
+                              />
+                              <label class="mt-3">Your Name</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                name="email"
+                                placeholder="Your Email"
+                              />
+                            </div>
+                            <div class="col-lg-6">
+                              <label>Select Your Categorie</label>
+                              <select
+                                class="form-select"
+                                aria-label="Default select example"
+                              >
+                                <option selected>Open this select menu</option>
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                              </select>
+                              <label class="mt-3">Your Name</label>
+                              <input
+                                class="form-control"
+                                type="date"
+                                id="birthday"
+                                name="birthday"
+                              />
+                            </div>
+                            <button type="submit" class="btn btn-light my-5">
+                              Submit
+                            </button>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="col-lg-2"></div>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <!-- Start Footer Sectin -->
+
+            <footer class="footer-section bg-dark text-light py-5">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-3">
+                    <h5 class="pb-3">About Us</h5>
+                    <p class="text-secondary">
+                      The Lambda Hospital at UK is among the leading centers in
+                      the world for comprehensive patient care, research and
+                      education in the fields of mental health, developmental
+                      disabilities and neurology. Patients are the focus of
+                      everything we do at the Lambda Hospital.
+                    </p>
+                    <p class="text-secondary">
+                      Get Lambda and start right away.
+                    </p>
+                  </div>
+                  <div class="col-lg-3">
+                    <h5 class="pb-3">Recent posts</h5>
+                    <div class="d-flex">
+                      <img
+                        src="img/Screenshot_6.png"
+                        width="40px"
+                        height="40px"
+                        alt=""
+                      />
+                      <span class="ps-3">
+                        <h6 class="mb-0">Working in the OR as a nurse</h6>
+                        <span class="text-secondary py-0 my-0"
+                          >July 25, 2015</span
+                        >
+                      </span>
+                    </div>
+                    <hr />
+                    <div class="d-flex">
+                      <img
+                        src="img/Screenshot_7.png"
+                        width="40px"
+                        height="40px"
+                        alt=""
+                      />
+                      <span class="ps-3">
+                        <h6 class="mb-0">Working in the OR as a nurse</h6>
+                        <span class="text-secondary py-0 my-0"
+                          >July 25, 2015</span
+                        >
+                      </span>
+                    </div>
+                    <hr />
+                    <div class="d-flex">
+                      <img
+                        src="img/Screenshot_6.png"
+                        width="40px"
+                        height="40px"
+                        alt=""
+                      />
+                      <span class="ps-3">
+                        <h6 class="mb-0">Working in the OR as a nurse</h6>
+                        <span class="text-secondary py-0 my-0"
+                          >July 25, 2015</span
+                        >
+                      </span>
+                    </div>
+                  </div>
+                  <div class="col-lg-3 catagori">
+                    <h5 class="pb-3">Categories</h5>
+                    <p>Cardiology</p>
+                    <p>Dentistry</p>
+                    <p>General surgery</p>
+                    <p>Ophthalmic</p>
+                    <p>Orthopedic</p>
+                  </div>
+                  <div class="col-lg-3">
+                    <address>
+                      <h5 class="pb-3">Contact us</h5>
+                      <p class="text-secondary">
+                        999 Some Street <br />
+                        Paradise City <br />
+                        UK <br />
+                        Tel: +1-800-555-555
+                      </p>
+                    </address>
+                  </div>
+                </div>
+              </div>
+            </footer>
+          </main>
+
+          <script src="js/bootstrap.bundle.min.js"></script>
+          <script src="js/script.js"></script>
+        </body>
+      </html>
+    </body>
+  </head>
+</html>
